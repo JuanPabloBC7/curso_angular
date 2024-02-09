@@ -1,1 +1,3 @@
-<p>list-message works!</p>
+<ul>
+    <li *ngFor="let m of messageServices.mensaje; let i = index">{{ i+1 }}. {{ m }}</li>
+</ul>

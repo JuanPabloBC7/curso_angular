@@ -10,6 +10,7 @@ import { NgFormTamplateComponent } from './ng-form-tamplate/ng-form-tamplate.com
 import { NgFormReactiveComponent } from './ng-form-reactive/ng-form-reactive.component';
 import { NgComponentInputComponent } from './ng-component-input/ng-component-input.component';
 import { NgComponentOutputComponent } from './ng-component-output/ng-component-output.component';
+import { NgServicesComponent } from './ng-services/ng-services.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,8 @@ import { NgComponentOutputComponent } from './ng-component-output/ng-component-o
     NgFormTamplateComponent,
     NgFormReactiveComponent,
     NgComponentInputComponent,
-    NgComponentOutputComponent
+    NgComponentOutputComponent,
+    NgServicesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
