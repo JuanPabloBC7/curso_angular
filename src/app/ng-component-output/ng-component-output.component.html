@@ -1,0 +1,8 @@
+<h5>> Componente padre</h5>
+<div class="form-group mb-2">
+  <label for="texto">Input en Padre</label>
+  <input type="text" class="form-control" placeholder="Enter Name" [(ngModel)]="texto">
+</div>
+
+<!-- <app-child [texto]="texto" (textoChange)="texto = $event"></app-child> -->
+<app-child [(texto)]="texto"></app-child>

@@ -1,0 +1,6 @@
+<h5>> Componente hijo</h5>
+<!-- <p>{{ciTexto2}} Mostrandose en el hijo</p> -->
+<div class="form-group mb-2">
+  <label for="cocInput">Input en Hijo</label>
+  <input type="text" id="cocInput" name="cocInput" (ngModelChange)="emitTextoChange()" class="form-control" placeholder="Enter Name" [(ngModel)]="texto">
+</div>
