@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 import { ContadorComponent } from './contador/contador.component';
 import { BotonesComponent } from './botones/botones.component';
@@ -26,7 +26,8 @@ import { NgServicesComponent } from './ng-services/ng-services.component';
     NgFormReactiveComponent,
     NgComponentInputComponent,
     NgComponentOutputComponent,
-    NgServicesComponent
+    NgServicesComponent,
+    RouterModule 
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
