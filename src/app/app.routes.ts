@@ -5,6 +5,8 @@ import { AboutComponent } from './componentes/ng-routing/about/about.component';
 import { PageNotFoundComponent } from './componentes/ng-routing/page-not-found/page-not-found.component';
 import { CursosComponent } from './componentes/ng-routing/cursos/cursos.component';
 import { CursosDetailComponent } from './componentes/ng-routing/cursos-detail/cursos-detail.component';
+import { ContactInfoComponent } from './componentes/ng-routing/contact-info/contact-info.component';
+import { ContactDetailComponent } from './componentes/ng-routing/contact-detail/contact-detail.component';
 
 /**
  * Tomar en cuenta las importaciones porque son importantes para poder realizar el ruteo de las páginas
@@ -42,6 +44,16 @@ export const routes: Routes = [
     {
         path: 'contact',
         component: ContactComponent,
+        children: [
+            {
+                path: '',
+                component: ContactInfoComponent
+            },
+            {
+                path: 'details',
+                component: ContactDetailComponent
+            }
+        ]
     },
     {
         path: 'about',
