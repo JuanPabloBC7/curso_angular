@@ -3,6 +3,8 @@ import { HomeComponent } from './componentes/ng-routing/home/home.component';
 import { ContactComponent } from './componentes/ng-routing/contact/contact.component';
 import { AboutComponent } from './componentes/ng-routing/about/about.component';
 import { PageNotFoundComponent } from './componentes/ng-routing/page-not-found/page-not-found.component';
+import { CursosComponent } from './componentes/ng-routing/cursos/cursos.component';
+import { CursosDetailComponent } from './componentes/ng-routing/cursos-detail/cursos-detail.component';
 
 /**
  * Tomar en cuenta las importaciones porque son importantes para poder realizar el ruteo de las páginas
@@ -28,6 +30,14 @@ export const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent,
+    },
+    {
+        path: 'cursos',
+        component: CursosComponent,
+    },
+    {
+        path: 'cursos/:id/:curso',
+        component: CursosDetailComponent,
     },
     {
         path: 'contact',
