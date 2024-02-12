@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-header">
+    <h4 id="@output">&#64;output</h4>
+  </div>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">
+      Se utilizan las propiedades <kbd>[(ngModel)]="variable"</kbd>, para identificar el <code>input</code> padre.
+      Y se utiliza <kbd>(ngModelChange)="funcion()"</kbd>, para realizar cambios en tiempo real, con la propiedad <kbd>EventEmitter</kbd>.
+    </p>
+
+    <h5>> Componente padre</h5>
+    <div class="form-group mb-2">
+      <label for="texto">Input en Padre</label>
+      <input type="text" class="form-control" placeholder="Enter Name" [(ngModel)]="texto">
+    </div>
+
+    <!-- <app-child [texto]="texto" (textoChange)="texto = $event"></app-child> -->
+    <app-child [(texto)]="texto"></app-child>
+  </div>
+</div>

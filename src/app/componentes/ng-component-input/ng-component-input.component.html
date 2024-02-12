@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-header">
+    <h4 id="#@input">&#64;input</h4>
+  </div>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">
+      Se utiliza la propiedad <kbd>[variable]="variable"</kbd>, para poder enviar una variablde del padre al hijo.
+    </p>
+
+    <p>{{ ciTexto1 }}</p>
+    <div class="form-group mb-2">
+      <label for="ciInput">Input en Padre</label>
+      <input type="text" id="ciInput" name="ciInput" class="form-control" placeholder="Enter Name" [(ngModel)]="ciTexto1">
+    </div>
+
+    <!-- <app-child ciTexto2="TEXTO 2: Este texto esta en el padre."></app-child> -->
+    <!-- <app-child ciTexto2="{{ ciTexto1 }}"></app-child> -->
+    <app-child [ciTexto2]="ciTexto1"></app-child>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">
+    <h4 id="ngFor">*ngFor</h4>
+  </div>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">
+      Se utiliza la propiedad <kbd>*ngFor</kbd>, para mostrar una lista de elementos.
+    </p>
+    <ul>
+      <li *ngFor="let persona of personas; let i = index">{{ i+1 }} - {{ persona.nombre }}, {{ persona.edad }}</li>
+    </ul>
+    <p class="card-text">
+      <kbd>*ngFor="let persona of personas; let i = index"</kbd>
+    </p>
+  </div>
+</div>

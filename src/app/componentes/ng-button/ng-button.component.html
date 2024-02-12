@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-header">
+    <h4 id="botones">Botones</h4>
+  </div>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">
+      Por medio de los botones, ejecutar una funcion que cambie de color el texto, evento <kbd>(click)</kbd>, utilizando la
+      propiedad <kbd>[class]="variable"</kbd>.
+    </p>
+    <div class="text-center">
+      <button (click)="cambiarTextDeColor('1')" class="btn btn-primary mx-1">hola</button>
+      <button (click)="cambiarTextDeColor('2')" class="btn btn-danger mx-1">hola</button>
+      <button (click)="cambiarTextDeColor('3')" class="btn btn-success mx-1">hola</button>
+      <p [class]="text_color" class="h3">Texto color: </p>
+    </div>
+    <p>El color es: {{text_color}}</p>
+  </div>
+</div>

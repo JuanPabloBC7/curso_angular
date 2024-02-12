@@ -1,0 +1,34 @@
+
+<div class="card">
+  <div class="card-header">
+    <h4 id="ngSwitch">[ngSwitch]</h4>
+  </div>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">
+      Se utiliza la propiedad <kbd>[ngSwitch]</kbd>, para identificar el día ingresado, y se utiliza la propiedad 
+      <kbd>*ngIf</kbd> para indicar que si el usuario ingresa 0, no se muestre ningún texto
+    </p>
+
+    <form>
+      <div class="form-group mb-4">
+        <label for="newDay">Día</label>
+        <input type="newDay" #newDay class="form-control" id="newDay" placeholder="Enter day">
+      </div>
+      <button type="button" (click)="showDay(newDay.value)" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div [ngSwitch]='dia' *ngIf="dia">
+      <span *ngSwitchCase='1'>Lunes</span>
+      <span *ngSwitchCase='2'>Martes</span>
+      <span *ngSwitchCase='3'>Miercoles</span>
+      <span *ngSwitchCase='4'>Jueves</span>
+      <span *ngSwitchCase='5'>Viernes</span>
+      <span *ngSwitchCase='6'>Sabado</span>
+      <span *ngSwitchCase='7'>Domingo</span>
+      <span *ngSwitchDefault>No valido</span>
+    </div>
+
+    <p class="card-text"><kbd>[ngSwitch]='dia' *ngIf="dia"</kbd>. <kbd>*ngSwitchCase='1'</kbd>. <kbd>*ngSwitchDefault</kbd></p>
+  </div>
+</div>

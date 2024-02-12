@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    <h4 id="contador">Contador</h4>
+  </div>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">
+      Por medio de los botones, ejecutar una funcion que sume y reste por medio del evento <kbd>(click)</kbd>.
+    </p>
+    <div class="text-center">
+      <button class="btn btn-primary mx-1" (click)="sumarORestar('-')">-</button>
+      <span class="lead"><strong>{{ numero }}</strong></span>
+      <button class="btn btn-primary mx-1" (click)="sumarORestar('+')">+</button>
+    </div>
+  </div>
+</div>

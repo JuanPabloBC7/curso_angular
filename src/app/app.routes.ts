@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './ng-routing/home/home.component';
-import { ContactComponent } from './ng-routing/contact/contact.component';
-import { AboutComponent } from './ng-routing/about/about.component';
-import { PageNotFoundComponent } from './ng-routing/page-not-found/page-not-found.component';
+import { HomeComponent } from './componentes/ng-routing/home/home.component';
+import { ContactComponent } from './componentes/ng-routing/contact/contact.component';
+import { AboutComponent } from './componentes/ng-routing/about/about.component';
+import { PageNotFoundComponent } from './componentes/ng-routing/page-not-found/page-not-found.component';
 
 /**
  * Tomar en cuenta las importaciones porque son importantes para poder realizar el ruteo de las páginas

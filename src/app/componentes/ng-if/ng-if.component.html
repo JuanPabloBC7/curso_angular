@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-header">
+    <h4 id="ngIf">*ngIf</h4>
+  </div>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">
+      La propiedad <kbd>*ngIf</kbd>, se utiliza para mostrar un <code>alert</code>, para eso se utiliza el evento 
+      <kbd>(click)</kbd>.
+    </p>
+    <form>
+      <div class="form-group mb-4">
+        <label for="name">Email address</label>
+        <input type="name" id="name" name="name" #name class="form-control" placeholder="Enter name">
+      </div>
+      <button type="button" (click)="showName(name.value)" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="alert alert-success mt-3" *ngIf="showAlert">
+      <strong>Holy guacamole!</strong> message send successfully!! {{ myName }}
+      <button type="button" class="close" (click)="showName(name.value)" >&times;</button>
+    </div>
+
+    <p class="card-text mt-2"><kbd>*ngIf="showAlert"</kbd></p>
+  </div>
+</div>
